@@ -4,7 +4,8 @@ using System.Collections;
 public class Player : MonoBehaviour {
 
 	public Transform playerSpawnPoints;
-	public bool reSpawn = false;
+	private bool reSpawn = false;
+	public Helicopter helicopter;
 
 	private bool lastToggle = false;
 	private Transform[] spawnPoints;
@@ -28,5 +29,10 @@ public class Player : MonoBehaviour {
 		Transform sp = spawnPoints[Random.Range(1, spawnPoints.Length)];
 		transform.position = sp.transform.position;
 
+	}
+
+	void OnFindClearArea() {
+		Debug.Log("found clear area in player");
+		helicopter.Call();
 	}
 }
