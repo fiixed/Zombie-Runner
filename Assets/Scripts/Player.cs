@@ -4,16 +4,15 @@ using System.Collections;
 public class Player : MonoBehaviour {
 
 	public Transform playerSpawnPoints;
-	private bool reSpawn = false;
-	public Helicopter helicopter;
 
 	private bool lastToggle = false;
 	private Transform[] spawnPoints;
+	private bool reSpawn = false;
+
 
 	// Use this for initialization
 	void Start () {
 		spawnPoints = playerSpawnPoints.GetComponentsInChildren<Transform>();
-		
 	}
 
 	void Update() {
@@ -32,7 +31,10 @@ public class Player : MonoBehaviour {
 	}
 
 	void OnFindClearArea() {
-		Debug.Log("found clear area in player");
-		helicopter.Call();
+		Invoke("DropFlare", 3f);
+	}
+
+	void DropFlare() {
+		// Drop a flare
 	}
 }

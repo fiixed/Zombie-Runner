@@ -14,12 +14,6 @@ public class Eyes : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		// if (Input.GetKeyDown(KeyCode.V)) {
-		// 	eyes.fieldOfView = defaultFOV / (float)1.5;
-		// } 
-		// if (Input.GetKeyUp(KeyCode.V)) {
-		// 	eyes.fieldOfView = defaultFOV;
-		// }
 
 		if (Input.GetButton("Zoom")) {
 			eyes.fieldOfView = defaultFOV / (float)1.5;
