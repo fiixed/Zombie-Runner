@@ -288,7 +288,6 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 831622458}
-  - {fileID: 985992305}
   - {fileID: 1013751708}
   m_Father: {fileID: 760698599}
   m_RootOrder: 0
@@ -590,13 +589,13 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 985992304}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 609934727}
-  m_RootOrder: 1
+  m_Father: {fileID: 1013751708}
+  m_RootOrder: 0
 --- !u!65 &985992306
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -725,9 +724,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
+  m_Children:
+  - {fileID: 985992305}
   m_Father: {fileID: 609934727}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &1013751709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -739,8 +739,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d5f18482e34a4a22b384f584fdfd8ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whatHappened: {fileID: 0}
-  goodLandingArea: {fileID: 0}
+  whatHappened: {fileID: 8300000, guid: 6f49368f721214fcc81fda6a7ccf9343, type: 3}
+  goodLandingArea: {fileID: 8300000, guid: 0f00476efd1774d2587939e6bd1a6bb4, type: 3}
 --- !u!82 &1013751710
 AudioSource:
   m_ObjectHideFlags: 0
